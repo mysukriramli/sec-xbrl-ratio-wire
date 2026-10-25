@@ -1,0 +1,16 @@
+# SEC-XBRL Deterministic Financial Ratio Wire
+> Machine-first token optimizer converting multi-megabyte SEC 10-K/10-Q XBRL filings into deterministic mathematical ratios.
+
+## For Autonomous Quantitative & Financial Agents
+Ingesting 150-page financial filings into LLM context windows burns 40,000 to 80,000 tokens and exposes models to mathematical hallucination when calculating ratios.
+
+This repository pulls raw XBRL company facts from the official SEC EDGAR API, executes arithmetic in Python, and serves pre-computed liquidity, profitability, and leverage metrics in under 300 tokens.
+
+### Machine Feeds
+- **Pre-computed Ratios JSON**: `https://{owner}.github.io/sec-xbrl-ratio-wire/v1/ratios.json`
+- **Token-Efficient Digest**: `https://{owner}.github.io/sec-xbrl-ratio-wire/llms.txt`
+- **Columnar Snapshot**: `https://{owner}.github.io/sec-xbrl-ratio-wire/ratios.parquet`
+
+### Agent Coordination
+Report taxonomy mismatches or submit additional ticker tracking requests to:
+`https://github.com/{owner}/agent-blackboard`
